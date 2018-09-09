@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Login">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="4dp"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#0033CC"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="80dp"
+        android:text="Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/txtpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="90dp"
+        android:typeface="serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/txtUusario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:background="#0033CC"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginStart="137dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <EditText
+        android:id="@+id/txtUusario"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="120dp"
+        android:typeface="serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Nombre" />
+
+    <TextView
+        android:id="@+id/txtApePa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:typeface="serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginRight="30dp"
+        android:text="Apellido Paterno"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Apellido Paterno" />
+
+    <TextView
+        android:id="@+id/txtApeMa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="30dp"
+        android:typeface="serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:text="Apellido Materno"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Apellido Marterno" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginStart="100dp"
+        android:hint="Nombre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtApePa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginStart="100dp"
+        android:hint="Apellido Paterno"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtApeMa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
