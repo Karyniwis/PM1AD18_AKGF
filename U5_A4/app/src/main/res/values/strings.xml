@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiAplicacionMultiLenguaje</string>
+    <string name="action_settings">Settings</string>
+    <string name="like">like</string>
+    <string name="share">share</string>
+    <string name="descripcionimagen">This is a image of colors </string>
+</resources>
